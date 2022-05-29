@@ -1,4 +1,12 @@
 
-输入./config.sh可以自动完成配置，整个过程非常简单
-
 在配置之前，您要确保你机器已经安装好vim,如果没有请先安装vim 
+
+//压缩包传到linux里
+
+tar xvf vimconfig.tar.gz
+
+touch ~/.vim
+
+apt-get install ctags
+
+./config.sh
