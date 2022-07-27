@@ -7,6 +7,6 @@ tar xvf vimconfig.tar.gz
 
 touch ~/.vim
 
-apt-get install ctags
+sudo apt install ctags
 
 ./config.sh
