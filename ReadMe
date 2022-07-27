@@ -1,12 +1,22 @@
 
-在配置之前，您要确保你机器已经安装好vim,如果没有请先安装vim 
+### 在配置之前，您要确保你机器已经安装好vim,如果没有请先安装vim 
 
 //压缩包传到linux里
 
 tar xvf vimconfig.tar.gz
 
-touch ~/.vim
+touch ~/.vimrc ~/.vim
 
 sudo apt install ctags
 
 ./config.sh
+
+
+### 终端配色
+
+vimconfig会修改终端用户名和主机名的颜色显示，这里我们可以手动设置调整终端颜色：
+
+// 需要修改的文件
+vim ~/.bashrc
+// 修改第二个PS1，把原先的注释掉就行
+PS1='${debian_chroot:+($debian_chroot)}\[\033[01;36;1m\]\u\[\033[00;36;1m\]@\[\033[01;36;1m\]\h\[\033[00;35;1m\]:\[\033[00;34;1m\]\w \[\033[01;32;1m\]\$ \[\033[0;33;1m\]'
