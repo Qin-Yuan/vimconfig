@@ -5,7 +5,7 @@
 
 tar xvf vimconfig.tar.gz
 
-touch ~/.vimrc
+touch ~/.vim
 
 apt-get install ctags
 
